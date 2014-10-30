@@ -1,5 +1,6 @@
-{{!
-< default}} {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }} {{! The big featured header }} <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+{{! The big featured header }} <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
   <nav class="main-nav overlay clearfix">
     {{#if @blog.logo}}
       <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" />
@@ -35,7 +36,6 @@
       </div>
     </div>
 
-
-    {{! The tag below includes the post loop - partials/loop.hbs }} {{> "loop"}}
-
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
   </main>
